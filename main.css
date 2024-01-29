@@ -99,23 +99,36 @@
         -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.65);
         -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.65);
     }
-    .container {
+    .container{
         /* border: 1px solid black; */
         display: flex;
         flex-flow: column;
         gap: 0.5em;
-        align-items: center;
+        align-items: left;
         padding: 1.5em;
         text-align: justify;
         /* border-bottom: 1px solid #F2F2F2; */
     }
+    .container h2{
+        align-self: center;
+    }
+    .container img{
+        align-self: center;
+    }
+    .credit-link{
+        text-decoration: underline;
+        color: blue;
+    }
     footer{
-        background-color: #404243;
-        color: white;
+        /* background-color: #404243; */
+        color: black;
         padding: 1em 3em;
         min-height: 10vh;
-        border: 1px solid black;
+        border-top: 1px solid #d8d8d8;
         text-align: center;
+    }
+    .social-links a{
+        margin-left: 1em;
     }
     @media only screen and (min-width: 768px){
         body {
@@ -165,6 +178,7 @@
             min-width: 30%;
         }
         aside .post-image{
+            margin-top: 0;
             background-color: white;
             min-width: 30%;
             min-height: 20vh;
